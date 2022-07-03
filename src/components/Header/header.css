@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:ital,wght@1,900&display=swap');
+
+.header{
+    background-color: #003580;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.headerContainer{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerContainer.listMode{
+    margin: 20px 0px 0px 0px;
+}
+
+.headerList{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.headerListItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 15px;
+    border-radius: 30px;
+}
+
+.headerListItem.active{
+    border: 1px solid #fff;
+}
+
+.headerListItem:hover{
+    background-color: #ffffff2e;
+}
+
+.headerTitle{
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.headerDesc{
+    margin: 20px 0px;
+    font-size: 1.5rem;
+}
+
+.headerButton{
+    background-color: #0071c2;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: #fff;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+}
+
+.headerIcon{
+    color: #bcbcbc;
+}
+
+.headerSearchItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerSearchInput{
+    border: none;
+    outline: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.headerSearchText{
+    color: #7e7e7e;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.date{
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+}
+
+.options{
+    z-index: 2;
+    position: absolute;
+    top: 50px;
+    background-color: #fff;
+    color: gray;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.50);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.50);
+}
+
+.optionItem{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.optionCounter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #000;
+}
+
+.optionCounterButton{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.optionCounterButton:disabled{
+    cursor: not-allowed;
+}
