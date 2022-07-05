@@ -10,7 +10,7 @@ const App = () => {
         <Routes>
             <Route exact path="/booking-app-ui-React" element={<Home />} />
             <Route path="/hotels" element={<List />} />
-            <Route path="/hotels/:id" element={<Hotel />} />
+            <Route path="/hotel" element={<Hotel />} />
         </Routes>
     </div>
     </>)

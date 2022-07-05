@@ -6,7 +6,7 @@ import 'react-date-range/dist/styles.css'  // calender main css file
 import 'react-date-range/dist/theme/default.css' // calender theme css file
 import {format} from 'date-fns'
 import './header.css'
-import { useNavigate } from "react-router-dom";
+import { useNavigate , NavLink } from "react-router-dom";
 
 const Header = ({type}) => {
     
@@ -75,6 +75,9 @@ const Header = ({type}) => {
                         Search low prices on hotels, homes and much more...
                     </p>
                     <button className="headerButton">Sign in / Register</button>
+                    <NavLink to="/hotel" className="hotelPageLink">
+                        <button className="hotelPageLinkBtn">View Single Hotel Page</button>
+                    </NavLink>
 
                 <div className="headerSearch">
                     <div className="headerSearchItem">
